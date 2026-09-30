@@ -1,6 +1,4 @@
 assembly_accession	organism_name	infraspecific_name	assembly_level	genome_size	scaffold_count	contig_count	total_gene_count	annotation_provider	ftp_path	matched_species	has_annotation
-GCA_965154615.1	Panellus stipticus	na	Scaffold	50755151	936	937	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/965/154/615/GCA_965154615.1_gfPanStip1.1_alternate_haplotype/	Panellus stipticus	no
-GCA_965154625.1	Panellus stipticus	na	Chromosome	40150070	66	168	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/965/154/625/GCA_965154625.1_gfPanStip1.1/	Panellus stipticus	no
 GCA_013427175.2	Armillaria borealis	strain=AB13-TR4-IP16, /ecotype=Eastern Siberia	Scaffold	66593114	44364	46529	47	Genome Research and Education Center, Siberian Federal University	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/013/427/175/GCA_013427175.2_ASM1342717v2/	Armillaria borealis	yes
 GCA_030435635.1	Armillaria borealis	strain=FPL87.14	Contig	71689880	864	864	20308	DOE Joint Genome Institute	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/030/435/635/GCA_030435635.1_Armbor1/	Armillaria borealis	yes
 GCA_900157415.1	Armillaria cepistipes	strain=B5	Contig	75519607	182	182	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/157/415/GCA_900157415.1_version_2/	Armillaria cepistipes	no

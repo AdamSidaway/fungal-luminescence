@@ -145,6 +145,54 @@ def four_gene_report(pos, neg, pos_asm, neg_asm):
         print(f"  {label:<9} {len(full):>3}/{n} ({100*len(full)/n:>5.1f}%)")
 
 
+def operating_point(pos, neg, neg_asm):
+    """Set the working threshold from the controls, per gene.
+
+    Two different statistics can be called "the negative ceiling" and they
+    disagree badly - for HispS, 35.3% identity if you take the identity of the
+    highest-scoring locus, but 54.3% if you take the maximum identity over all
+    loci including short, low-complexity ones. The first is the operationally
+    honest one, because the top-scoring locus is what a caller would actually
+    take as the gene, so that is what is used here. The second is reported
+    alongside it so the gap is visible rather than hidden by a choice of metric.
+    """
+    print("\n" + "=" * 78)
+    print("OPERATING POINT (set from the negative control, not chosen in advance)")
+    print("=" * 78)
+
+    pb = best_per_assembly_gene(pos["loci"])
+    nb = best_per_assembly_gene(neg["loci"])
+    all_neg = neg["loci"]
+
+    print(f"\n{'gene':<7}{'pos n':>6}{'pos min id':>12}{'neg max id':>12}"
+          f"{'margin':>9}  verdict")
+    print("-" * 78)
+    for g in GENES:
+        pv = sorted(float(pb[k]["best_pident"]) for k in pb if k[1] == g)
+        nv = sorted(float(nb[k]["best_pident"]) for k in nb if k[1] == g)
+        if not pv or not nv:
+            continue
+        clean = pv[0] > nv[-1]
+        admitted = sum(1 for v in nv if v >= pv[0])
+        verdict = ("CLEAN" if clean else
+                   f"OVERLAP - {admitted}/{neg_asm} negatives admitted")
+        print(f"{g:<7}{len(pv):>6}{pv[0]:>12.1f}{nv[-1]:>12.1f}"
+              f"{pv[0]-nv[-1]:>+9.1f}  {verdict}")
+
+    print("\nFor reference, the same negative ceiling computed as max identity over\n"
+          "ALL loci rather than the identity of the top-scoring locus:")
+    for g in GENES:
+        vals = [float(r["best_pident"]) for r in all_neg if r["gene"] == g]
+        top = [float(nb[k]["best_pident"]) for k in nb if k[1] == g]
+        if vals and top:
+            print(f"  {g:<6} top-scoring locus {max(top):>5.1f}%   "
+                  f"any locus {max(vals):>5.1f}%")
+
+    print("\nRule that follows: Luz is the diagnostic gene and CPH cannot be used\n"
+          "as evidence on its own. This is what the brief anticipated and the\n"
+          "controls now measure rather than assume.")
+
+
 def main():
     posd = sys.argv[1] if len(sys.argv) > 1 else "results/controls/positive"
     negd = sys.argv[2] if len(sys.argv) > 2 else "results/controls/negative"
@@ -156,6 +204,7 @@ def main():
     print(f"negative control: {neg_asm} genomes")
 
     gene_report(pos, neg, pos_asm, neg_asm)
+    operating_point(pos, neg, neg_asm)
     four_gene_report(pos, neg, pos_asm, neg_asm)
     cluster_report(pos, neg, pos_asm, neg_asm)
 

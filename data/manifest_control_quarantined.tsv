@@ -1,0 +1,3 @@
+assembly_accession	organism_name	infraspecific_name	assembly_level	genome_size	scaffold_count	contig_count	total_gene_count	annotation_provider	ftp_path	matched_species	has_annotation
+GCA_965154615.1	Panellus stipticus	na	Scaffold	50755151	936	937	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/965/154/615/GCA_965154615.1_gfPanStip1.1_alternate_haplotype/	Panellus stipticus	no
+GCA_965154625.1	Panellus stipticus	na	Chromosome	40150070	66	168	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/965/154/625/GCA_965154625.1_gfPanStip1.1/	Panellus stipticus	no

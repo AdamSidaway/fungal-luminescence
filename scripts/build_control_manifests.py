@@ -207,6 +207,33 @@ def cap_per_species(rows, n):
 # has nothing to do with detection. Sensitivity must be measured on genomes.
 MIN_GENOME_BP = 5_000_000
 
+# Assemblies quarantined out of the POSITIVE control, with the reason.
+#
+# Luminescence is not always a property of a species. Panellus stipticus is the
+# classic case: it carries both luminescent and non-luminescent lineages, and
+# Rabara & Xie 2025 (J Fungi 11:774) report the cluster absent from a
+# non-luminous strain whose genome is otherwise near-identically syntenic with
+# the luminous one. A positive control assembled from species names therefore
+# cannot be assumed to consist of luminous specimens.
+#
+# The two entries below are two assemblies of a SINGLE Sanger BioSample
+# (SAMEA9873913), so they are not independent observations either. In the
+# control sweep both returned HispS, H3H and Luz at or below the identity
+# ceiling measured in Ascomycete genomes that carry no pathway at all
+# (Luz 28.3% against a 37.5% Ascomycete ceiling and a 73.2% floor among true
+# positives). They do not carry the cluster. Left in the positive control they
+# would be scored as a three-gene detection failure and would put the measured
+# detection floor at 28.3% identity for Luz, which is a statement about a
+# specimen that has no Luz rather than about the sensitivity of the search.
+QUARANTINE_POSITIVE = {
+    "GCA_965154615.1": "P. stipticus, Sanger SAMEA9873913; no cluster detected "
+                       "(Luz 28.3% id, below Ascomycete ceiling); likely the "
+                       "non-luminous lineage; same BioSample as GCA_965154625.1",
+    "GCA_965154625.1": "P. stipticus, Sanger SAMEA9873913; no cluster detected "
+                       "(Luz 28.7% id, below Ascomycete ceiling); likely the "
+                       "non-luminous lineage; same BioSample as GCA_965154615.1",
+}
+
 
 def is_genome(rec):
     gs = rec.get("genome_size", "")
@@ -255,6 +282,17 @@ def main():
 
     print("\nsize filter:")
     pos = drop_non_genomes(pos, "positive")
+
+    quar = [r for r in pos if r.get("assembly_accession") in QUARANTINE_POSITIVE]
+    pos = [r for r in pos if r.get("assembly_accession") not in QUARANTINE_POSITIVE]
+    if quar:
+        print("\nquarantined from the positive control:")
+        for r in quar:
+            print(f"  {r['assembly_accession']}  {r['organism_name']}")
+            print(f"    reason: {QUARANTINE_POSITIVE[r['assembly_accession']]}")
+        write_manifest(quar, "data/manifest_control_quarantined.tsv")
+        print("  -> data/manifest_control_quarantined.tsv (kept, not deleted:"
+              " these are a Branch A observation in their own right)")
     neg_all = drop_non_genomes(neg_all, "negative")
 
     # Positives are kept in full: there are few of them and every one is a
