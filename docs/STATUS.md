@@ -3,8 +3,8 @@
 Updated: 2026-09-30
 
 ## Task 0 — prior art (GATES BRANCH A)
-- [~] Europe PMC sweep, three queries, each run with and without `SRC:PPR` — running
-- [~] bioRxiv direct search, last 18 months — running
+- [x] Europe PMC sweep, three queries, with and without `SRC:PPR`
+- [x] bioRxiv direct search, last 18 months
 - [x] Patent landscape complete — see docs/IP_POSITION.md
       Brief's premise corrected: the named Light Bio applications recite NO
       mammalian and NO oncology claims, and are narrow (>=90% identity + named
@@ -12,7 +12,12 @@ Updated: 2026-09-30
       whose claim 1 is sequence-independent and covers any non-higher-fungus cell
       containing 3-hydroxyhispidin. Verified in-session from the official PDF.
       Branch B risk concentrates in the L3 genus family (>=40% HispS, >=60% H3H/CPH).
-- [ ] Verdict: is Branch A still open?
+- [x] **VERDICT: BRANCH A IS OPEN.** No published or preprinted work has searched
+      for the four genes in unannotated assemblies by any six-frame or
+      nucleotide-level method. All three at-scale surveys are proteome-only on
+      pre-filtered Agaricales: Kotlobay 2018 n=57 (blastp), Ke 2020 n=42
+      (OrthoFinder), Kim 2022 n=40. Of 926 Agaricales assemblies at NCBI only
+      231 (25%) are annotated. See docs/PRIOR_ART.md.
 
 ## Environment
 - [x] Toolchain: BLAST+ 2.12, exonerate 2.4.0, MAFFT 7.505, HMMER 3.4, FastTree,
@@ -23,10 +28,19 @@ Updated: 2026-09-30
 
 ## Task 1 — mining run
 - [x] Assembly census: 26,465 latest fungal assemblies, 20,310 (76.7%) unannotated
-- [ ] Query proteins from primary papers (blocked on Task 0 accession recovery)
+- [x] Query proteins built: 43 sequences (HispS 11, H3H 14, CPH 6, Luz 12) from
+      Kotlobay 2018 SI Datasets S1-S4. THERE ARE NO ACCESSIONS for these genes in
+      any of the three primary papers; the SI datasets are coding nucleotide and
+      are translated here. Validated: nnLuz = 267 aa, matching the paper's text;
+      no internal stops. Checksummed in data/refseqs/PROVENANCE.md.
 - [ ] Six-frame sweep, controls first
 - [ ] exonerate protein2genome refinement
 - [ ] Tier assignment on cluster completeness
+- [ ] **HispS domain architecture must be recorded per locus** (KR/DH present or
+      absent). The brief has the truncation backwards: non-luminous orthologues
+      are the LONGER ones, carrying extra ketoreductase and dehydratase domains;
+      luminous HispS lacks them (1,504-1,774 aa vs 2,484 aa). Sequence identity
+      alone would mis-score a non-luminous full-length PKS as a pathway gene.
 
 ## Task 2 — controls (BEFORE any discovery number)
 - [x] Positive manifest: 33 assemblies, 18 species with recorded luminescence, 2.35 Gbp
