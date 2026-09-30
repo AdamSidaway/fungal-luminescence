@@ -1,13 +1,13 @@
 assembly_accession	organism_name	infraspecific_name	assembly_level	genome_size	scaffold_count	contig_count	total_gene_count	annotation_provider	ftp_path	matched_species	has_annotation
 GCA_040126065.1	Aspergillus fumigatus	strain=AF100-9B	Complete Genome	28304265	8	8	10077	Geisel School of Medicine at Dartmouth	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/040/126/065/GCA_040126065.1_UCR_Afum_AF100-9B_1.0/	Aspergillus fumigatus	yes
 GCA_058970245.1	Aspergillus fumigatus	strain=eAF1023	Complete Genome	27753075	8	8	10185	Geisel School of Medicine at Dartmouth	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/058/970/245/GCA_058970245.1_UCR_Afum_eAF1023_1.0/	Aspergillus fumigatus	yes
-GCA_986281675.1	Aspergillus fumigatus	na	Complete Genome	564	1	1	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/986/281/675/GCA_986281675.1_DAH1043FM/	Aspergillus fumigatus	no
+GCA_028752175.1	Aspergillus fumigatus	strain=Afir974	Complete Genome	28628506	8	8	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/028/752/175/GCA_028752175.1_ASM2875217v1/	Aspergillus fumigatus	no
 GCA_059491275.1	Aspergillus nidulans	strain=CS2498	Complete Genome	30112495	8	8	10586	BOKU University	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/059/491/275/GCA_059491275.1_ASM5949127v1/	Aspergillus nidulans	yes
 GCA_000011425.1	Aspergillus nidulans FGSC A4	strain=FGSC A4	Chromosome	29828291	8	82	10597	Eurofungbase (Eurofung)	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/011/425/GCA_000011425.1_ASM1142v1/	Aspergillus nidulans	yes
 GCA_000149205.2	Aspergillus nidulans FGSC A4	strain=FGSC A4	Scaffold	30242742	90	248	9591	Broad Institute	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/149/205/GCA_000149205.2_ASM14920v2/	Aspergillus nidulans	yes
-GCA_986280965.1	Aspergillus niger	na	Complete Genome	543	1	1	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/986/280/965/GCA_986280965.1_DAH1014FM/	Aspergillus niger	no
-GCA_986281005.1	Aspergillus niger	na	Complete Genome	543	1	1	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/986/281/005/GCA_986281005.1_DAH1011FM/	Aspergillus niger	no
 GCA_047651775.1	Aspergillus niger	strain=CCTCC 206047	Complete Genome	35403962	8	8	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/047/651/775/GCA_047651775.1_ASM4765177v1/	Aspergillus niger	no
+GCA_055697485.1	Aspergillus niger	strain=ATCC 1015	Chromosome	35617925	8	9	11387	TU Wien	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/055/697/485/GCA_055697485.1_ASM5569748v1/	Aspergillus niger	yes
+GCA_051529875.1	Aspergillus niger	strain=DFA-N	Chromosome	38167674	27	28	12610	University of California, Riverside	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/051/529/875/GCA_051529875.1_UCR_AnigDFA-N_1.0/	Aspergillus niger	yes
 GCA_057808355.1	Aspergillus oryzae	strain=TK-35	Complete Genome	38282360	8	8	12875	The University of Tokyo	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/057/808/355/GCA_057808355.1_AoTK35_1.0/	Aspergillus oryzae	yes
 GCA_057808365.1	Aspergillus oryzae	strain=RIB40	Complete Genome	37996583	8	8	13617	The University of Tokyo	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/057/808/365/GCA_057808365.1_AoRIB40_1.0/	Aspergillus oryzae	yes
 GCA_008032255.1	Aspergillus oryzae	strain=KSS2	Complete Genome	38484998	8	8	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/008/032/255/GCA_008032255.1_ASM803225v1/	Aspergillus oryzae	no

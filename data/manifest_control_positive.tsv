@@ -15,7 +15,6 @@ GCA_964034915.1	Armillaria ostoyae	na	Chromosome	66148026	439	499	0	na	https://f
 GCA_964034935.1	Armillaria ostoyae	na	Scaffold	62435115	560	561	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/964/034/935/GCA_964034935.1_gfArmOsto1.1_alternate_haplotype/	Armillaria ostoyae	no
 GCA_030407055.1	Armillaria mellea	strain=ELDO17	Contig	70852771	474	474	15855	DOE Joint Genome Institute	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/030/407/055/GCA_030407055.1_Armmel1/	Armillaria mellea	yes
 GCA_003987895.1	Neonothopanus nambi	strain=BIN 2379	Contig	103544009	14713	14713	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/987/895/GCA_003987895.1_ASM398789v1/	Neonothopanus nambi	no
-GCA_055690705.1	Omphalotus olearius	strain=AS 2790	Contig	221483	426	426	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/055/690/705/GCA_055690705.1_ASM5569070v1/	Omphalotus olearius	no
 GCA_030435655.1	Armillaria novae-zelandiae	strain=ICMP 16352	Contig	79334843	427	427	18802	DOE Joint Genome Institute	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/030/435/655/GCA_030435655.1_Armnov1/	Armillaria novae-zelandiae	yes
 GCA_013387415.1	Panellus pusillus	na	Contig	49366550	3463	3463	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/013/387/415/GCA_013387415.1_ASM1338741v1/	Panellus pusillus	no
 GCA_029449255.1	Mycena polygramma	strain=CBHHK137	Contig	132253541	422	422	40113	DOE Joint Genome Institute	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/029/449/255/GCA_029449255.1_Mycpol1/	Mycena polygramma	yes

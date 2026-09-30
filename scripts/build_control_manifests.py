@@ -130,6 +130,19 @@ def load_latest(summary_path):
     return rows
 
 
+def drop_non_genomes(rows, label):
+    keep = [r for r in rows if is_genome(r)]
+    dropped = [r for r in rows if not is_genome(r)]
+    if dropped:
+        print(f"  {label}: dropped {len(dropped)} entr(ies) below "
+              f"{MIN_GENOME_BP/1e6:.0f} Mbp as not-a-genome:")
+        for r in dropped:
+            gs = r.get("genome_size", "?")
+            gs = f"{int(gs)/1e6:.2f} Mbp" if gs.isdigit() else gs
+            print(f"    {r.get('assembly_accession', r.get('#assembly_accession', '?'))}  {r['organism_name']}  {gs}")
+    return keep
+
+
 def match(rows, species_list):
     """Match assemblies whose organism_name starts with a listed binomial.
 
@@ -183,6 +196,23 @@ def cap_per_species(rows, n):
     return out
 
 
+# Minimum assembly size to count as a genome. Fungal genomes run from ~8 Mbp
+# (microsporidia) to >200 Mbp (some Mycena); Agaricales sit at 30-150 Mbp.
+# NCBI carries entries under a species name that are not genomes at all: the
+# positive control initially pulled in GCA_055690705.1, filed as
+# "Omphalotus olearius" but consisting of 426 contigs totalling 221 kb with a
+# mean length of 520 bp - a marker or amplicon set, 0.8% of a real genome.
+# It returned zero hits, and left in place would have been recorded as a
+# detection failure, degrading the measured detection floor for a reason that
+# has nothing to do with detection. Sensitivity must be measured on genomes.
+MIN_GENOME_BP = 5_000_000
+
+
+def is_genome(rec):
+    gs = rec.get("genome_size", "")
+    return gs.isdigit() and int(gs) >= MIN_GENOME_BP
+
+
 def annotated(rec):
     g = rec.get("total_gene_count", "")
     return bool(g) and g != "na" and g.isdigit() and int(g) > 0
@@ -222,6 +252,10 @@ def main():
 
     pos, pos_found = match(rows, LUMINOUS_SPECIES)
     neg_all, neg_found = match(rows, NEGATIVE_SPECIES)
+
+    print("\nsize filter:")
+    pos = drop_non_genomes(pos, "positive")
+    neg_all = drop_non_genomes(neg_all, "negative")
 
     # Positives are kept in full: there are few of them and every one is a
     # separate chance to miss a cluster, which is exactly what the detection
