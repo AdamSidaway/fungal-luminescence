@@ -12,3 +12,8 @@ __pycache__/
 # Sequences we DO commit (small, needed for reproducibility)
 !data/refseqs/*.fasta
 !results/**/*.fasta
+
+# Raw per-HSP output: large and fully regenerable from the assemblies + query
+# set by scripts/sweep.py. The curated loci/clusters tables and the called
+# sequences are committed; this is the intermediate.
+results/**/hits_raw.tsv
