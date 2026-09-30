@@ -5,7 +5,13 @@ Updated: 2026-09-30
 ## Task 0 — prior art (GATES BRANCH A)
 - [~] Europe PMC sweep, three queries, each run with and without `SRC:PPR` — running
 - [~] bioRxiv direct search, last 18 months — running
-- [~] Patent landscape: US 2025/0075191 A1, WO 2025/049575 A1, CN 116732084 A — running
+- [x] Patent landscape complete — see docs/IP_POSITION.md
+      Brief's premise corrected: the named Light Bio applications recite NO
+      mammalian and NO oncology claims, and are narrow (>=90% identity + named
+      substitutions). The real exposure is US 12,473,582 B2, GRANTED 2025-11-18,
+      whose claim 1 is sequence-independent and covers any non-higher-fungus cell
+      containing 3-hydroxyhispidin. Verified in-session from the official PDF.
+      Branch B risk concentrates in the L3 genus family (>=40% HispS, >=60% H3H/CPH).
 - [ ] Verdict: is Branch A still open?
 
 ## Environment
@@ -33,7 +39,11 @@ Updated: 2026-09-30
 - [ ] blocked on Task 0 verdict and Task 2 controls
 
 ## Branch B — engineering (NOT FOR PUBLICATION until IP checked)
-- [ ] B1 in-cluster PPTase scan (highest value; answerable from sequence alone)
+Hold stands and is now better justified — see docs/IP_POSITION.md.
+Every ASR output and thermotolerant candidate must carry its percent identity
+to the relevant patent SEQ IDs as a required deliverable.
+- [ ] B1 in-cluster PPTase scan (highest value scientifically AND least
+      encumbered on the patent evidence; answerable from sequence alone)
 - [ ] B2 naturally thermotolerant orthologues
 - [ ] B3 ancestral sequence reconstruction (report posterior per site, not one sequence)
 - [ ] B4 natural NADH-preferring H3H
