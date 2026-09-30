@@ -1,0 +1,34 @@
+assembly_accession	organism_name	infraspecific_name	assembly_level	genome_size	scaffold_count	contig_count	total_gene_count	annotation_provider	ftp_path	matched_species	has_annotation
+GCA_965154615.1	Panellus stipticus	na	Scaffold	50755151	936	937	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/965/154/615/GCA_965154615.1_gfPanStip1.1_alternate_haplotype/	Panellus stipticus	no
+GCA_965154625.1	Panellus stipticus	na	Chromosome	40150070	66	168	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/965/154/625/GCA_965154625.1_gfPanStip1.1/	Panellus stipticus	no
+GCA_013427175.2	Armillaria borealis	strain=AB13-TR4-IP16, /ecotype=Eastern Siberia	Scaffold	66593114	44364	46529	47	Genome Research and Education Center, Siberian Federal University	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/013/427/175/GCA_013427175.2_ASM1342717v2/	Armillaria borealis	yes
+GCA_030435635.1	Armillaria borealis	strain=FPL87.14	Contig	71689880	864	864	20308	DOE Joint Genome Institute	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/030/435/635/GCA_030435635.1_Armbor1/	Armillaria borealis	yes
+GCA_900157415.1	Armillaria cepistipes	strain=B5	Contig	75519607	182	182	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/157/415/GCA_900157415.1_version_2/	Armillaria cepistipes	no
+GCA_002307695.1	Armillaria gallica	strain=Ar21-2	Scaffold	85336812	319	1866	26021	DOE Joint Genome Institute	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/307/695/GCA_002307695.1_Armga1/	Armillaria gallica	yes
+GCA_012064365.1	Armillaria gallica	strain=012m	Contig	87305441	63	63	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/012/064/365/GCA_012064365.1_YMU_Armga_1.1/	Armillaria gallica	no
+GCA_026212265.1	Armillaria gallica	strain=Jzi34	Scaffold	79246165	3082	3845	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/026/212/265/GCA_026212265.1_ASM2621226v1/	Armillaria gallica	no
+GCA_037576215.1	Armillaria gallica	strain=M3	Contig	86087770	33	33	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/037/576/215/GCA_037576215.1_ASM3757621v1/	Armillaria gallica	no
+GCA_038088205.1	Armillaria gallica	strain=NIFoS 2319	Contig	86027854	275	275	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/038/088/205/GCA_038088205.1_NIFoS_Agal_0.1/	Armillaria gallica	no
+GCA_900157425.1	Armillaria ostoyae	strain=C18/9	Contig	60106801	106	106	22581	Technische Universitat Munchen - WZW	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/157/425/GCA_900157425.1_version_2/	Armillaria ostoyae	yes
+GCA_902506015.1	Armillaria ostoyae	strain=C18/9	Chromosome	56666185	11	79	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/902/506/015/GCA_902506015.1_ARMOSTPCHR/	Armillaria ostoyae	no
+GCA_964034915.1	Armillaria ostoyae	na	Chromosome	66148026	439	499	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/964/034/915/GCA_964034915.1_gfArmOsto1.1/	Armillaria ostoyae	no
+GCA_964034935.1	Armillaria ostoyae	na	Scaffold	62435115	560	561	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/964/034/935/GCA_964034935.1_gfArmOsto1.1_alternate_haplotype/	Armillaria ostoyae	no
+GCA_030407055.1	Armillaria mellea	strain=ELDO17	Contig	70852771	474	474	15855	DOE Joint Genome Institute	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/030/407/055/GCA_030407055.1_Armmel1/	Armillaria mellea	yes
+GCA_003987895.1	Neonothopanus nambi	strain=BIN 2379	Contig	103544009	14713	14713	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/987/895/GCA_003987895.1_ASM398789v1/	Neonothopanus nambi	no
+GCA_055690705.1	Omphalotus olearius	strain=AS 2790	Contig	221483	426	426	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/055/690/705/GCA_055690705.1_ASM5569070v1/	Omphalotus olearius	no
+GCA_030435655.1	Armillaria novae-zelandiae	strain=ICMP 16352	Contig	79334843	427	427	18802	DOE Joint Genome Institute	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/030/435/655/GCA_030435655.1_Armnov1/	Armillaria novae-zelandiae	yes
+GCA_013387415.1	Panellus pusillus	na	Contig	49366550	3463	3463	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/013/387/415/GCA_013387415.1_ASM1338741v1/	Panellus pusillus	no
+GCA_029449255.1	Mycena polygramma	strain=CBHHK137	Contig	132253541	422	422	40113	DOE Joint Genome Institute	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/029/449/255/GCA_029449255.1_Mycpol1/	Mycena polygramma	yes
+GCA_029281435.1	Mycena haematopus	strain=CBHHK189	Contig	62806267	1062	1062	21038	DOE Joint Genome Institute	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/029/281/435/GCA_029281435.1_Mychae1/	Mycena haematopus	yes
+GCA_014462675.1	Mycena sanguinolenta	strain=160909Yilan	Contig	167179886	155	155	24024	Academia Sinica	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/462/675/GCA_014462675.1_ASM1446267v1/	Mycena sanguinolenta	yes
+GCA_029203985.1	Mycena sanguinolenta	strain=CBHHK176m	Contig	115408990	198	198	35151	DOE Joint Genome Institute	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/029/203/985/GCA_029203985.1_Mycsan1/	Mycena sanguinolenta	yes
+GCA_001612595.1	Mycena chlorophos	na	Contig	43602020	25660	25660	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/612/595/GCA_001612595.1_MycenaChlorophos_1.0/	Mycena chlorophos	no
+GCA_014461115.1	Mycena chlorophos	strain=110903Hualien_Pintung	Contig	50883660	80	80	13505	Academia Sinica	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/461/115/GCA_014461115.1_ASM1446111v1/	Mycena chlorophos	yes
+GCA_019112545.1	Guyanagaster necrorhizus	strain=MCA 3950	Scaffold	53686691	168	689	14491	DOE Joint Genome Institute	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/019/112/545/GCA_019112545.1_Guyne1/	Guyanagaster necrorhizus	yes
+GCA_002307675.1	Armillaria solidipes	strain=28-4	Scaffold	58009494	229	848	21131	DOE Joint Genome Institute	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/307/675/GCA_002307675.1_Armost1/	Armillaria solidipes	yes
+GCA_022818035.1	Armillaria solidipes	na	Scaffold	55735298	72	78	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/022/818/035/GCA_022818035.1_ASM2281803v1/	Armillaria solidipes	no
+GCA_053525415.1	Armillaria solidipes	na	Scaffold	56557193	7691	41576	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/053/525/415/GCA_053525415.1_ASM5352541v1/	Armillaria solidipes	no
+GCA_000296255.1	Omphalotus olearius VT 653.13	strain=VT 653.13	Scaffold	27993721	802	2192	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/296/255/GCA_000296255.1_OmpOle_1.0/	Omphalotus olearius	no
+GCA_029378245.1	Roridomyces roridus	strain=9284	Contig	91122911	543	543	26795	DOE Joint Genome Institute	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/029/378/245/GCA_029378245.1_Rorror1/	Roridomyces roridus	yes
+GCA_003987915.1	Mycena citricolor	strain=CBS 193.57	Contig	75081718	12462	12462	0	na	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/987/915/GCA_003987915.1_ASM398791v1/	Mycena citricolor	no
+GCA_963692855.1	Mycena citricolor	na	Contig	77511139	493	493	21425	The Genome Analysis Centre	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/963/692/855/GCA_963692855.1_Mycena_citricolor_isolate010_v1/	Mycena citricolor	yes

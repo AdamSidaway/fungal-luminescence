@@ -1,0 +1,14 @@
+# Large data — never committed
+data/assemblies/
+data/blastdb/
+*.fna
+*.fna.gz
+*.dmnd
+*.zip
+logs/*.log
+__pycache__/
+.ipynb_checkpoints/
+
+# Sequences we DO commit (small, needed for reproducibility)
+!data/refseqs/*.fasta
+!results/**/*.fasta
