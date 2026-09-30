@@ -38,5 +38,6 @@ Updated: 2026-09-30
 - [ ] B3 ancestral sequence reconstruction (report posterior per site, not one sequence)
 - [ ] B4 natural NADH-preferring H3H
 
-## Open decision for the user
-Compute scope of the full sweep — see docs/SCOPE.md.
+## Compute scope — RESOLVED
+Full 26,465-assembly sweep benchmarked at ~10-12 h wall clock. Affordable.
+Branch A will NOT be restricted to the Agaricales. See docs/SCOPE.md.
